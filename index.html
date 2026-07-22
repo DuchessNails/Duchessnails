@@ -1,91 +1,973 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
   <meta charset="UTF-8">
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Duchessnails — professional nail services in Gagny, France.">
-  <title>Duchessnails | Nail Studio in Gagny</title>
+
+  <meta
+    id="metaDescription"
+    name="description"
+    content="Duchessnails — prestations professionnelles d’onglerie à Gagny, France."
+    data-fr="Duchessnails — prestations professionnelles d’onglerie à Gagny, France."
+    data-en="Duchessnails — professional nail services in Gagny, France."
+  >
+
+  <title>Duchessnails | Prothésiste ongulaire à Gagny</title>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
+
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-<header class="site-header">
-  <a class="brand" href="#home"><span class="brand-mark">D</span><span>Duchessnails</span></a>
-  <button class="menu-button" type="button" aria-label="Open navigation" aria-expanded="false"><span></span><span></span><span></span></button>
-  <nav class="main-nav">
-    <a href="#home">Home</a><a href="#services">Services</a><a href="#gallery">Gallery</a><a href="#booking">Book</a><a href="#contact">Contact</a>
-  </nav>
-</header>
-<main>
-<section class="hero" id="home">
-  <div class="hero-copy">
-    <p class="eyebrow">Nail studio in Gagny, France</p>
-    <h1>Elegant nails.<br><em>Beautiful confidence.</em></h1>
-    <p class="hero-text">Professional nail care and creative nail designs made to help you feel polished, confident and uniquely beautiful.</p>
-    <div class="hero-actions"><a class="button primary" href="#booking">Book an appointment</a><a class="button secondary" href="#gallery">View gallery</a></div>
-    <div class="hero-meta"><span>Open Monday–Sunday</span><span>24-hour booking enquiries</span><span>€5 non-refundable deposit</span></div>
-  </div>
-  <div class="hero-visual">
-    <div class="hero-card hero-card-large"><img src="images/hero.jpeg" alt="Featured Duchessnails nail design"></div>
-    <div class="hero-card hero-card-small"><span class="mini-label">Signature finish</span><strong>Luxury details, made for you.</strong></div>
-  </div>
-</section>
-<section class="section intro"><div><p class="eyebrow">Welcome to Duchessnails</p><h2>Beauty is in the details.</h2></div><p>Duchessnails offers personalised nail services in a welcoming setting in Gagny. Every appointment is handled with care, creativity and attention to detail.</p></section>
-<section class="section" id="services">
-  <div class="section-heading"><p class="eyebrow">Our services</p><h2>Choose your next look</h2><p>Final pricing is confirmed before your appointment based on length, design and service type.</p></div>
-  <div class="service-grid">
-    <article class="service-card"><span>01</span><h3>💅 Gel manicure & extensions</h3><p>Beautiful gel manicure with optional nail extensions for a glossy, durable finish tailored to your style.</p></article>
-    <article class="service-card"><span>02</span><h3>✨ Acrylic nails</h3><p>Strong, stylish extensions shaped and finished to suit your look.</p></article>
-    <article class="service-card"><span>03</span><h3>🌸 Gel polishing </h3><p>Long-lasting gel polish that delivers a flawless shine without chipping.</p></article>
-    <article class="service-card"><span>04</span><h3>🎨 Nail art</h3><p>Custom details, patterns, colours and creative statement designs.</p></article>
-    <article class="service-card"><span>05</span><h3>🦶 Pedicure</h3><p>Relaxing pedicure treatment including nail shaping, cuticle care, and your choice of gel or classic polish.</p></article>
-    <article class="service-card"><span>06</span><h3>🛠 Removal & repair</h3><p>Careful removal, maintenance and repair of damaged nails.</p></article>
-  </div>
-</section>
-<section class="section gallery-section" id="gallery">
-  <div class="section-heading"><p class="eyebrow">Recent work</p><h2>The Duchess gallery</h2><p>Replace these sample images with clear photographs of her real nail sets.</p></div>
-  <div class="gallery-grid">
-    <figure class="gallery-item gallery-wide"><img src="images/gallery-1.jpeg" alt="Duchessnails nail design 1"></figure>
-    <figure class="gallery-item"><img src="images/gallery-2.jpeg" alt="Duchessnails nail design 2"></figure>
-    <figure class="gallery-item"><img src="images/gallery-3.jpeg" alt="Duchessnails nail design 3"></figure>
-    <figure class="gallery-item"><img src="images/gallery-4.jpeg" alt="Duchessnails nail design 4"></figure>
-    <figure class="gallery-item gallery-wide"><img src="images/gallery-5.jpeg" alt="Duchessnails nail design 5"></figure>
-  </div>
-  <a class="text-link" href="https://instagram.com/gloria_da_duchess" target="_blank" rel="noopener">See more on Instagram →</a>
-</section>
-<section class="booking-section" id="booking">
-  <div class="booking-copy">
-    <p class="eyebrow light">Appointments</p><h2>Reserve your appointment</h2>
-    <p>A €5 non-refundable deposit is required to secure every appointment. Your booking is confirmed only after the deposit and appointment details are accepted.</p>
-    <div class="deposit-note"><strong>Booking policy</strong><span>The €5 deposit is non-refundable.</span></div>
-    <a class="button white" id="paymentLink" href="#">Pay €5 deposit</a>
-    <p class="payment-help">Replace the placeholder payment link with a Stripe Payment Link.</p>
-  </div>
-  <form class="booking-form" id="bookingForm">
-    <h3>Send a booking request</h3>
-    <label for="clientName">Full name</label><input id="clientName" type="text" required placeholder="Your full name">
-    <label for="service">Preferred service</label>
-    <select id="service" required><option value="">Select a service</option><option>Gel manicure</option><option>Acrylic nails</option><option>Gel extensions</option><option>Nail art</option><option>French tips</option><option>Removal or repair</option><option>Other / consultation</option></select>
-    <div class="form-row"><div><label for="date">Preferred date</label><input id="date" type="date" required></div><div><label for="time">Preferred time</label><input id="time" type="time" required></div></div>
-    <label for="notes">Design or special request</label><textarea id="notes" rows="4" placeholder="Describe your preferred design, colour or length"></textarea>
-    <button class="button primary full" type="submit">Continue on WhatsApp</button>
-    <p class="form-note">This form opens WhatsApp with your booking details. It does not confirm the appointment automatically.</p>
-  </form>
-</section>
-<section class="section contact-section" id="contact">
-  <div><p class="eyebrow">Contact</p><h2>Let’s create your next set</h2></div>
-  <div class="contact-grid">
-    <a href="https://wa.me/33634261455" target="_blank" rel="noopener"><span>WhatsApp</span><strong>+33 6 34 26 14 55</strong></a>
-    <a href="mailto:Duchessnails@gmail.com"><span>Email</span><strong>Duchessnails@gmail.com</strong></a>
-    <a href="https://instagram.com/Duchessnails" target="_blank" rel="noopener"><span>Instagram</span><strong>@Duchessnails</strong></a>
-    <div><span>Location</span><strong>Gagny, France</strong></div>
-  </div>
-</section>
-</main>
-<footer><a class="brand" href="#home"><span class="brand-mark">D</span><span>Duchessnails</span></a><p>© <span id="year"></span> Duchessnails. All rights reserved.</p></footer>
-<a class="floating-whatsapp" href="https://wa.me/33634261455" target="_blank" rel="noopener">WhatsApp</a>
-<script src="script.js"></script>
+
+  <!-- =========================
+       HEADER
+  ========================== -->
+
+  <header class="site-header">
+
+    <a
+      class="brand"
+      href="#home"
+      aria-label="Accueil Duchessnails"
+    >
+      <span class="brand-mark">D</span>
+      <span>Duchessnails</span>
+    </a>
+
+    <button
+      class="menu-button"
+      type="button"
+      aria-label="Ouvrir le menu"
+      aria-expanded="false"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <div class="header-right">
+
+      <nav
+        class="main-nav"
+        aria-label="Navigation principale"
+      >
+
+        <a
+          href="#home"
+          data-fr="Accueil"
+          data-en="Home"
+        >
+          Accueil
+        </a>
+
+        <a
+          href="#services"
+          data-fr="Prestations"
+          data-en="Services"
+        >
+          Prestations
+        </a>
+
+        <a
+          href="#gallery"
+          data-fr="Galerie"
+          data-en="Gallery"
+        >
+          Galerie
+        </a>
+
+        <a
+          href="#booking"
+          data-fr="Réserver"
+          data-en="Book"
+        >
+          Réserver
+        </a>
+
+        <a
+          href="#contact"
+          data-fr="Contact"
+          data-en="Contact"
+        >
+          Contact
+        </a>
+
+      </nav>
+
+      <!-- LANGUAGE SWITCH -->
+
+      <div
+        class="language-switcher"
+        aria-label="Choisir la langue"
+      >
+
+        <button
+          type="button"
+          class="language-button active"
+          data-language="fr"
+          aria-label="Afficher le site en français"
+        >
+          FR
+        </button>
+
+        <span>|</span>
+
+        <button
+          type="button"
+          class="language-button"
+          data-language="en"
+          aria-label="Display the website in English"
+        >
+          EN
+        </button>
+
+      </div>
+
+    </div>
+
+  </header>
+
+  <main>
+
+    <!-- =========================
+         HERO SECTION
+    ========================== -->
+
+    <section class="hero" id="home">
+
+      <div class="hero-copy">
+
+        <p
+          class="eyebrow"
+          data-fr="Prothésiste ongulaire à Gagny, France"
+          data-en="Nail studio in Gagny, France"
+        >
+          Prothésiste ongulaire à Gagny, France
+        </p>
+
+        <h1>
+
+          <span
+            data-fr="Des ongles élégants."
+            data-en="Elegant nails."
+          >
+            Des ongles élégants.
+          </span>
+
+          <br>
+
+          <em
+            data-fr="Une confiance sublimée."
+            data-en="Beautiful confidence."
+          >
+            Une confiance sublimée.
+          </em>
+
+        </h1>
+
+        <p
+          class="hero-text"
+          data-fr="Des soins professionnels et des créations personnalisées pour vous offrir des ongles soignés, élégants et uniques."
+          data-en="Professional nail care and creative nail designs made to help you feel polished, confident and uniquely beautiful."
+        >
+          Des soins professionnels et des créations personnalisées
+          pour vous offrir des ongles soignés, élégants et uniques.
+        </p>
+
+        <div class="hero-actions">
+
+          <a
+            class="button primary"
+            href="#booking"
+            data-fr="Prendre rendez-vous"
+            data-en="Book an appointment"
+          >
+            Prendre rendez-vous
+          </a>
+
+          <a
+            class="button secondary"
+            href="#gallery"
+            data-fr="Voir la galerie"
+            data-en="View gallery"
+          >
+            Voir la galerie
+          </a>
+
+        </div>
+
+        <div class="hero-meta">
+
+          <span
+            data-fr="Disponible du lundi au dimanche"
+            data-en="Open Monday–Sunday"
+          >
+            Disponible du lundi au dimanche
+          </span>
+
+          <span
+            data-fr="Demandes de réservation 24 h/24"
+            data-en="24-hour booking enquiries"
+          >
+            Demandes de réservation 24 h/24
+          </span>
+
+          <span
+            data-fr="Acompte non remboursable de 5 €"
+            data-en="€5 non-refundable deposit"
+          >
+            Acompte non remboursable de 5 €
+          </span>
+
+        </div>
+
+      </div>
+
+      <div class="hero-visual">
+
+        <div class="hero-card hero-card-large">
+
+          <img
+            src="images/hero.jpeg"
+            alt="Création ongulaire Duchessnails"
+            data-alt-fr="Création ongulaire réalisée par Duchessnails"
+            data-alt-en="Featured Duchessnails nail design"
+          >
+
+        </div>
+
+        <div class="hero-card hero-card-small">
+
+          <span
+            class="mini-label"
+            data-fr="Finition signature"
+            data-en="Signature finish"
+          >
+            Finition signature
+          </span>
+
+          <strong
+            data-fr="Des détails raffinés, créés spécialement pour vous."
+            data-en="Luxury details, made for you."
+          >
+            Des détails raffinés, créés spécialement pour vous.
+          </strong>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- =========================
+         INTRODUCTION
+    ========================== -->
+
+    <section class="section intro">
+
+      <div>
+
+        <p
+          class="eyebrow"
+          data-fr="Bienvenue chez Duchessnails"
+          data-en="Welcome to Duchessnails"
+        >
+          Bienvenue chez Duchessnails
+        </p>
+
+        <h2
+          data-fr="La beauté se trouve dans les détails."
+          data-en="Beauty is in the details."
+        >
+          La beauté se trouve dans les détails.
+        </h2>
+
+      </div>
+
+      <p
+        data-fr="Duchessnails propose des prestations personnalisées dans un cadre accueillant à Gagny. Chaque rendez-vous est réalisé avec soin, créativité et une attention particulière aux détails."
+        data-en="Duchessnails offers personalised nail services in a welcoming setting in Gagny. Every appointment is handled with care, creativity and attention to detail."
+      >
+        Duchessnails propose des prestations personnalisées dans un cadre
+        accueillant à Gagny. Chaque rendez-vous est réalisé avec soin,
+        créativité et une attention particulière aux détails.
+      </p>
+
+    </section>
+
+    <!-- =========================
+         SERVICES
+    ========================== -->
+
+    <section class="section" id="services">
+
+      <div class="section-heading">
+
+        <p
+          class="eyebrow"
+          data-fr="Nos prestations"
+          data-en="Our services"
+        >
+          Nos prestations
+        </p>
+
+        <h2
+          data-fr="Choisissez votre prochain style"
+          data-en="Choose your next look"
+        >
+          Choisissez votre prochain style
+        </h2>
+
+        <p
+          data-fr="Le tarif final est confirmé avant votre rendez-vous selon la longueur, le design et le type de prestation souhaité."
+          data-en="Final pricing is confirmed before your appointment based on length, design and service type."
+        >
+          Le tarif final est confirmé avant votre rendez-vous selon la longueur,
+          le design et le type de prestation souhaité.
+        </p>
+
+      </div>
+
+      <div class="service-grid">
+
+        <!-- SERVICE 1 -->
+
+        <article class="service-card">
+
+          <span>01</span>
+
+          <h3
+            data-fr="💅 Manucure gel & extensions"
+            data-en="💅 Gel manicure & extensions"
+          >
+            💅 Manucure gel & extensions
+          </h3>
+
+          <p
+            data-fr="Une manucure gel soignée avec possibilité d’extensions pour un résultat brillant, résistant et adapté à votre style."
+            data-en="A beautiful gel manicure with optional nail extensions for a glossy, durable finish tailored to your style."
+          >
+            Une manucure gel soignée avec possibilité d’extensions pour un
+            résultat brillant, résistant et adapté à votre style.
+          </p>
+
+        </article>
+
+        <!-- SERVICE 2 -->
+
+        <article class="service-card">
+
+          <span>02</span>
+
+          <h3
+            data-fr="✨ Ongles en résine acrylique"
+            data-en="✨ Acrylic nails"
+          >
+            ✨ Ongles en résine acrylique
+          </h3>
+
+          <p
+            data-fr="Des extensions solides et élégantes, façonnées selon la forme, la longueur et le style souhaités."
+            data-en="Strong, stylish extensions shaped and finished to suit your preferred length, shape and style."
+          >
+            Des extensions solides et élégantes, façonnées selon la forme,
+            la longueur et le style souhaités.
+          </p>
+
+        </article>
+
+        <!-- SERVICE 3 -->
+
+        <article class="service-card">
+
+          <span>03</span>
+
+          <h3
+            data-fr="🌸 Vernis semi-permanent"
+            data-en="🌸 Gel polishing"
+          >
+            🌸 Vernis semi-permanent
+          </h3>
+
+          <p
+            data-fr="Une pose de vernis longue tenue offrant une finition brillante, uniforme et résistante aux éclats."
+            data-en="Long-lasting gel polish that delivers a smooth, flawless shine without chipping."
+          >
+            Une pose de vernis longue tenue offrant une finition brillante,
+            uniforme et résistante aux éclats.
+          </p>
+
+        </article>
+
+        <!-- SERVICE 4 -->
+
+        <article class="service-card">
+
+          <span>04</span>
+
+          <h3
+            data-fr="🎨 Nail art"
+            data-en="🎨 Nail art"
+          >
+            🎨 Nail art
+          </h3>
+
+          <p
+            data-fr="Des motifs, couleurs, strass, décorations et créations personnalisées selon vos envies."
+            data-en="Custom details, colours, rhinestones, patterns and creative designs made to match your style."
+          >
+            Des motifs, couleurs, strass, décorations et créations
+            personnalisées selon vos envies.
+          </p>
+
+        </article>
+
+        <!-- SERVICE 5 -->
+
+        <article class="service-card">
+
+          <span>05</span>
+
+          <h3
+            data-fr="🦶 Pédicure"
+            data-en="🦶 Pedicure"
+          >
+            🦶 Pédicure
+          </h3>
+
+          <p
+            data-fr="Un soin relaxant comprenant la mise en forme des ongles, le soin des cuticules et la pose de vernis classique ou semi-permanent."
+            data-en="A relaxing pedicure including nail shaping, cuticle care and your choice of classic or gel polish."
+          >
+            Un soin relaxant comprenant la mise en forme des ongles,
+            le soin des cuticules et la pose de vernis classique ou
+            semi-permanent.
+          </p>
+
+        </article>
+
+        <!-- SERVICE 6 -->
+
+        <article class="service-card">
+
+          <span>06</span>
+
+          <h3
+            data-fr="🛠 Dépose & réparation"
+            data-en="🛠 Removal & repair"
+          >
+            🛠 Dépose & réparation
+          </h3>
+
+          <p
+            data-fr="Une dépose soigneuse, un entretien adapté et la réparation des ongles abîmés afin de préserver vos ongles naturels."
+            data-en="Careful removal, maintenance and repair of damaged nails to help protect your natural nails."
+          >
+            Une dépose soigneuse, un entretien adapté et la réparation
+            des ongles abîmés afin de préserver vos ongles naturels.
+          </p>
+
+        </article>
+
+      </div>
+
+    </section>
+
+    <!-- =========================
+         GALLERY
+    ========================== -->
+
+    <section class="section gallery-section" id="gallery">
+
+      <div class="section-heading">
+
+        <p
+          class="eyebrow"
+          data-fr="Nos réalisations"
+          data-en="Recent work"
+        >
+          Nos réalisations
+        </p>
+
+        <h2
+          data-fr="La galerie Duchess"
+          data-en="The Duchess gallery"
+        >
+          La galerie Duchess
+        </h2>
+
+        <p
+          data-fr="Découvrez quelques-unes de nos créations et trouvez l’inspiration pour votre prochain rendez-vous."
+          data-en="Discover some of our recent nail designs and find inspiration for your next appointment."
+        >
+          Découvrez quelques-unes de nos créations et trouvez
+          l’inspiration pour votre prochain rendez-vous.
+        </p>
+
+      </div>
+
+      <div class="gallery-grid">
+
+        <figure class="gallery-item gallery-wide">
+          <img
+            src="images/gallery-1.jpeg"
+            alt="Création ongulaire Duchessnails numéro 1"
+            data-alt-fr="Création ongulaire Duchessnails numéro 1"
+            data-alt-en="Duchessnails nail design 1"
+          >
+        </figure>
+
+        <figure class="gallery-item">
+          <img
+            src="images/gallery-2.jpeg"
+            alt="Création ongulaire Duchessnails numéro 2"
+            data-alt-fr="Création ongulaire Duchessnails numéro 2"
+            data-alt-en="Duchessnails nail design 2"
+          >
+        </figure>
+
+        <figure class="gallery-item">
+          <img
+            src="images/gallery-3.jpeg"
+            alt="Création ongulaire Duchessnails numéro 3"
+            data-alt-fr="Création ongulaire Duchessnails numéro 3"
+            data-alt-en="Duchessnails nail design 3"
+          >
+        </figure>
+
+        <figure class="gallery-item">
+          <img
+            src="images/gallery-4.jpeg"
+            alt="Création ongulaire Duchessnails numéro 4"
+            data-alt-fr="Création ongulaire Duchessnails numéro 4"
+            data-alt-en="Duchessnails nail design 4"
+          >
+        </figure>
+
+        <figure class="gallery-item gallery-wide">
+          <img
+            src="images/gallery-5.jpeg"
+            alt="Création ongulaire Duchessnails numéro 5"
+            data-alt-fr="Création ongulaire Duchessnails numéro 5"
+            data-alt-en="Duchessnails nail design 5"
+          >
+        </figure>
+
+      </div>
+
+      <a
+        class="text-link"
+        href="https://instagram.com/gloria_da_duchess"
+        target="_blank"
+        rel="noopener"
+        data-fr="Voir plus de créations sur Instagram →"
+        data-en="See more on Instagram →"
+      >
+        Voir plus de créations sur Instagram →
+      </a>
+
+    </section>
+
+    <!-- =========================
+         BOOKING
+    ========================== -->
+
+    <section class="booking-section" id="booking">
+
+      <div class="booking-copy">
+
+        <p
+          class="eyebrow light"
+          data-fr="Rendez-vous"
+          data-en="Appointments"
+        >
+          Rendez-vous
+        </p>
+
+        <h2
+          data-fr="Réservez votre rendez-vous"
+          data-en="Reserve your appointment"
+        >
+          Réservez votre rendez-vous
+        </h2>
+
+        <p
+          data-fr="Un acompte non remboursable de 5 € est demandé pour sécuriser chaque rendez-vous. Votre réservation est confirmée uniquement après réception de l’acompte et validation des informations."
+          data-en="A €5 non-refundable deposit is required to secure every appointment. Your booking is confirmed only after the deposit and appointment details are accepted."
+        >
+          Un acompte non remboursable de 5 € est demandé pour sécuriser
+          chaque rendez-vous. Votre réservation est confirmée uniquement
+          après réception de l’acompte et validation des informations.
+        </p>
+
+        <div class="deposit-note">
+
+          <strong
+            data-fr="Politique de réservation"
+            data-en="Booking policy"
+          >
+            Politique de réservation
+          </strong>
+
+          <span
+            data-fr="L’acompte de 5 € est non remboursable."
+            data-en="The €5 deposit is non-refundable."
+          >
+            L’acompte de 5 € est non remboursable.
+          </span>
+
+        </div>
+
+        <a
+          class="button white"
+          id="paymentLink"
+          href="#"
+          data-fr="Payer l’acompte de 5 €"
+          data-en="Pay €5 deposit"
+        >
+          Payer l’acompte de 5 €
+        </a>
+
+        <p
+          class="payment-help"
+          data-fr="Le paiement sécurisé en ligne sera bientôt disponible. Vous pouvez également contacter Duchessnails sur WhatsApp."
+          data-en="Secure online payment will be available soon. You can also contact Duchessnails through WhatsApp."
+        >
+          Le paiement sécurisé en ligne sera bientôt disponible.
+          Vous pouvez également contacter Duchessnails sur WhatsApp.
+        </p>
+
+      </div>
+
+      <!-- BOOKING FORM -->
+
+      <form class="booking-form" id="bookingForm">
+
+        <h3
+          data-fr="Envoyer une demande de rendez-vous"
+          data-en="Send a booking request"
+        >
+          Envoyer une demande de rendez-vous
+        </h3>
+
+        <label
+          for="clientName"
+          data-fr="Nom complet"
+          data-en="Full name"
+        >
+          Nom complet
+        </label>
+
+        <input
+          id="clientName"
+          name="clientName"
+          type="text"
+          required
+          placeholder="Votre nom complet"
+          data-placeholder-fr="Votre nom complet"
+          data-placeholder-en="Your full name"
+        >
+
+        <label
+          for="service"
+          data-fr="Prestation souhaitée"
+          data-en="Preferred service"
+        >
+          Prestation souhaitée
+        </label>
+
+        <select id="service" name="service" required>
+
+          <option
+            value=""
+            data-fr="Sélectionnez une prestation"
+            data-en="Select a service"
+          >
+            Sélectionnez une prestation
+          </option>
+
+          <option
+            value="gel-extensions"
+            data-fr="Manucure gel & extensions"
+            data-en="Gel manicure & extensions"
+          >
+            Manucure gel & extensions
+          </option>
+
+          <option
+            value="acrylic"
+            data-fr="Ongles en résine acrylique"
+            data-en="Acrylic nails"
+          >
+            Ongles en résine acrylique
+          </option>
+
+          <option
+            value="gel-polish"
+            data-fr="Vernis semi-permanent"
+            data-en="Gel polishing"
+          >
+            Vernis semi-permanent
+          </option>
+
+          <option
+            value="nail-art"
+            data-fr="Nail art"
+            data-en="Nail art"
+          >
+            Nail art
+          </option>
+
+          <option
+            value="pedicure"
+            data-fr="Pédicure"
+            data-en="Pedicure"
+          >
+            Pédicure
+          </option>
+
+          <option
+            value="removal-repair"
+            data-fr="Dépose ou réparation"
+            data-en="Removal or repair"
+          >
+            Dépose ou réparation
+          </option>
+
+          <option
+            value="other"
+            data-fr="Autre demande ou consultation"
+            data-en="Other request or consultation"
+          >
+            Autre demande ou consultation
+          </option>
+
+        </select>
+
+        <div class="form-row">
+
+          <div>
+
+            <label
+              for="date"
+              data-fr="Date souhaitée"
+              data-en="Preferred date"
+            >
+              Date souhaitée
+            </label>
+
+            <input
+              id="date"
+              name="date"
+              type="date"
+              required
+            >
+
+          </div>
+
+          <div>
+
+            <label
+              for="time"
+              data-fr="Heure souhaitée"
+              data-en="Preferred time"
+            >
+              Heure souhaitée
+            </label>
+
+            <input
+              id="time"
+              name="time"
+              type="time"
+              required
+            >
+
+          </div>
+
+        </div>
+
+        <label
+          for="notes"
+          data-fr="Design ou demande particulière"
+          data-en="Design or special request"
+        >
+          Design ou demande particulière
+        </label>
+
+        <textarea
+          id="notes"
+          name="notes"
+          rows="4"
+          placeholder="Décrivez le design, la couleur, la forme ou la longueur souhaitée"
+          data-placeholder-fr="Décrivez le design, la couleur, la forme ou la longueur souhaitée"
+          data-placeholder-en="Describe your preferred design, colour, shape or length"
+        ></textarea>
+
+        <button
+          class="button primary full"
+          type="submit"
+          data-fr="Continuer sur WhatsApp"
+          data-en="Continue on WhatsApp"
+        >
+          Continuer sur WhatsApp
+        </button>
+
+        <p
+          class="form-note"
+          data-fr="Ce formulaire ouvre WhatsApp avec les informations saisies. Il ne confirme pas automatiquement votre rendez-vous."
+          data-en="This form opens WhatsApp with your booking details. It does not confirm the appointment automatically."
+        >
+          Ce formulaire ouvre WhatsApp avec les informations saisies.
+          Il ne confirme pas automatiquement votre rendez-vous.
+        </p>
+
+      </form>
+
+    </section>
+
+    <!-- =========================
+         CONTACT
+    ========================== -->
+
+    <section class="section contact-section" id="contact">
+
+      <div>
+
+        <p
+          class="eyebrow"
+          data-fr="Contact"
+          data-en="Contact"
+        >
+          Contact
+        </p>
+
+        <h2
+          data-fr="Créons ensemble votre prochaine pose"
+          data-en="Let’s create your next set"
+        >
+          Créons ensemble votre prochaine pose
+        </h2>
+
+      </div>
+
+      <div class="contact-grid">
+
+        <a
+          href="https://wa.me/33634261455"
+          target="_blank"
+          rel="noopener"
+        >
+
+          <span>WhatsApp</span>
+
+          <strong>
+            +33 6 34 26 14 55
+          </strong>
+
+        </a>
+
+        <a href="mailto:Duchessnails@gmail.com">
+
+          <span
+            data-fr="E-mail"
+            data-en="Email"
+          >
+            E-mail
+          </span>
+
+          <strong>
+            Duchessnails@gmail.com
+          </strong>
+
+        </a>
+
+        <a
+          href="https://instagram.com/gloria_da_duchess"
+          target="_blank"
+          rel="noopener"
+        >
+
+          <span>Instagram</span>
+
+          <strong>
+            @gloria_da_duchess
+          </strong>
+
+        </a>
+
+        <div>
+
+          <span
+            data-fr="Localisation"
+            data-en="Location"
+          >
+            Localisation
+          </span>
+
+          <strong>
+            Gagny, France
+          </strong>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- =========================
+       FOOTER
+  ========================== -->
+
+  <footer>
+
+    <a class="brand" href="#home">
+
+      <span class="brand-mark">D</span>
+
+      <span>Duchessnails</span>
+
+    </a>
+
+    <p>
+
+      © <span id="year"></span> Duchessnails.
+
+      <span
+        data-fr="Tous droits réservés."
+        data-en="All rights reserved."
+      >
+        Tous droits réservés.
+      </span>
+
+    </p>
+
+  </footer>
+
+  <!-- FLOATING WHATSAPP BUTTON -->
+
+  <a
+    class="floating-whatsapp"
+    href="https://wa.me/33634261455"
+    target="_blank"
+    rel="noopener"
+    aria-label="Contacter Duchessnails sur WhatsApp"
+  >
+    WhatsApp
+  </a>
+
+  <script src="script.js"></script>
+
 </body>
 </html>
